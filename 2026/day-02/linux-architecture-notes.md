@@ -1,4 +1,4 @@
-## ""Core Components of Linux""
+## Core Components of Linux
 
 ## Linux Architecture Diagram
 
@@ -45,17 +45,17 @@
 +----------------------+
 ```
 
-### ""Kernel (Heart of Linux)""
+### Kernel (Heart of Linux)
 
 The kernel is the core component of Linux.
 It communicates directly with hardware
 
-""Responsible for:""
+Responsible for:
 - Process scheduling (decides which process gets CPU)
 - management (allocates and frees RAM)
 - Device management (disk, network, keyboard)
 
-### ""User Space""
+### User Space
 
 User space is where users and applications operate
 
@@ -66,7 +66,7 @@ Includes:
   
  User space cannot access hardware directly
 
- ### ""init / systemd (System Controller)""
+ ### init / systemd (System Controller)
 
 - systemd is the first process started by the kernel (PID 1)
 - Controls system startup and shutdown
@@ -74,7 +74,7 @@ Includes:
 - Restarts failed services automatically
 - systemd keeps the system stable and available.
 
-## ""How Processes Are Created & Managed""
+## How Processes Are Created & Managed
 
 A process is a program in execution
 
@@ -89,31 +89,31 @@ Kernel assigns:
   
  Process management ensures system performance.
 
-### ""Process States""
+### Process States
 
-- ""Running (R)"": Actively using CPU
-- ""Sleeping (S)"": Waiting for event/input (normal state)
-- ""Stopped (T)"": Paused by signal or user
-- ""Zombie"" (Z): Process finished but parent didn’t clean it
-- ""Idle"": Waiting, no CPU usage
+- Running (R): Actively using CPU
+- Sleeping (S): Waiting for event/input (normal state)
+- Stopped (T): Paused by signal or user
+- Zombie (Z): Process finished but parent didn’t clean it
+- Idle: Waiting, no CPU usage
 
-## ""What systemd Does & Why It Matters""
+## What systemd Does & Why It Matters
 
-### ""What systemd Does""
+### What systemd Does
 
 - Starts services at boot
 - Stops and restarts services
 - Handles service dependencies
 - Maintains logs using journalctl
 
-## ""Why systemd Matters""
+## Why systemd Matters
 
 - Faster boot time
 - Automatic recovery from failures
 - Centralized logging
 - Simplified service management
 
-## ""Daily Linux Commands for DevOps""
+## Daily Linux Commands for DevOps
 
 - ps aux → View running processes
 - top → Live CPU and memory usage
